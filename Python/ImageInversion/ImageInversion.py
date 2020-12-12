@@ -141,13 +141,15 @@ def algorithm_version_5(index):
 # algorithm_version_5(4)
 # image5.show()
 
+# nums = ['10609', '42849', '85264', '170569', '341056', '682276', '1364224', '2096704']
 file = open("output.csv", "w")
+
 for i in range(8):
     #file.write(f'==================Image Version: {i+1}=========================\n')
     for j in range(5):
         #file.write(f'=================Algorithm Version: {j+1}=======================\n')
         for i in range(60):
-            file.write(f'{start_experiment(i, j)},')
+            file.write(f'{start_experiment(i+1, j+1)},')
         file.write('\n')
 
 file.close()
